@@ -27,4 +27,14 @@ void CreateArray2(string[] stringArray1, string[] stringArray2)
     }
 }
 
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"[{string.Join(", ", array[i])}]");
+    }
+    Console.WriteLine();
+}
 
+CreateArray2(stringArray1, stringArray2);
+PrintArray(stringArray2);
