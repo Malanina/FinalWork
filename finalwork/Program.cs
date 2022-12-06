@@ -14,4 +14,17 @@ Console.Clear();
 string[] stringArray1 = new string[] {"Hello", "2", "world", ":-)"};
 string[] stringArray2 = new string[stringArray1.Length];
 
+void CreateArray2(string[] stringArray1, string[] stringArray2)
+{
+    int count = 0;
+    for (int i = 1; i < stringArray1.Length; i++)
+    {
+        if (stringArray1[i].Length <= 3)
+        {
+            stringArray2[count] = stringArray1[i];
+            count++;
+        }
+    }
+}
+
 
